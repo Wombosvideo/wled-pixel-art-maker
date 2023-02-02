@@ -35,7 +35,7 @@ function generateWLED() {
       if (color == "") {
         color = "#000000";
       }
-      output += `'${color}'`;
+      output += `''${color.substring(1)}''`;
       if (i != input_rows - 1 || j != input_cols - 1) {
         output += ",";
       }
